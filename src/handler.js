@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 const { nanoid } = require('nanoid');
 const notes = require('./notes');
 
@@ -108,7 +107,7 @@ const deleteNoteByIdHandler = (request, h) => {
     return response;
   }
 
- const response = h.response({
+  const response = h.response({
     status: 'fail',
     message: 'Catatan gagal dihapus. Id tidak ditemukan',
   });
@@ -116,10 +115,10 @@ const deleteNoteByIdHandler = (request, h) => {
   return response;
 };
 
-module.exports = { 
-  addNoteHandler, 
-  getAllNotesHandler, 
-  getNoteByIdHandler, 
-  editNoteByIdHandler, 
+module.exports = {
+  addNoteHandler,
+  getAllNotesHandler,
+  getNoteByIdHandler,
+  editNoteByIdHandler,
   deleteNoteByIdHandler,
 };

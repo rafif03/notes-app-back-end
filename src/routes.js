@@ -1,9 +1,8 @@
-/* eslint-disable linebreak-style */
-const { 
-  addNoteHandler, 
-  getAllNotesHandler, 
-  getNoteByIdHandler, 
-  editNoteByIdHandler, 
+const {
+  addNoteHandler,
+  getAllNotesHandler,
+  getNoteByIdHandler,
+  editNoteByIdHandler,
   deleteNoteByIdHandler,
 } = require('./handler');
 
